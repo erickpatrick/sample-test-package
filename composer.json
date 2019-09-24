@@ -1,0 +1,42 @@
+{
+    "name": "erickpatrick/sample-test-package",
+    "description": "Sample Test Package template",
+    "keywords": [
+        "erickpatrick",
+        "sample-test-package"
+    ],
+    "homepage": "https://github.com/erickpatrick/sample-test-package",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Erick Patrick",
+            "email": "github@erickpatrick.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erickpatrick\\SampleTestPackage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Erickpatrick\\SampleTestPackage\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
